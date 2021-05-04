@@ -33,3 +33,6 @@
 
 #Cmake files
 qtserver/CMakeLists.txt.user
+
+#local build directory
+build-qtserver-Desktop_Qt_6_0_3_GCC_64bit-Debug/
