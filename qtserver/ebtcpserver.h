@@ -6,7 +6,7 @@
 class EBTCPServer : public QTcpServer
 {
 public:
-    EBTCPServer();
+    EBTCPServer(QObject *parent = nullptr);
 };
 
 #endif // EBTCPSERVER_H
