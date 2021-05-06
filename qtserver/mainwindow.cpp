@@ -6,14 +6,14 @@ MainWindow::MainWindow(QWidget *parent)
     ,m_pTcpServer(0)
 {
     m_pTcpServer = new EBTCPServer(this);
-    m_pTcpServer->listen();
+    InitTcpServer();
 }
 
 MainWindow::~MainWindow()
 {
 }
 
-void MainWindow::CreateTcpServer(){
-
+void MainWindow::InitTcpServer(){
+    m_pTcpServer->InitTcpServer();
 }
 

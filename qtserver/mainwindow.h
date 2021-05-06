@@ -10,7 +10,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void CreateTcpServer();
+    void InitTcpServer();
 
 private:
     EBTCPServer* m_pTcpServer;

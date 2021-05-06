@@ -6,8 +6,12 @@ EBTCPServer::EBTCPServer(QObject *parent):
 
 }
 
+QHostAddress EBTCPServer::getNonLocalHostIp()
+{
 
-void EBTCPServer::StartTcpServer()
+}
+
+void EBTCPServer::InitTcpServer()
 {
     QString ipAddress;
     QList<QHostAddress> ipAddressesList = QNetworkInterface::allAddresses();
@@ -17,7 +21,8 @@ void EBTCPServer::StartTcpServer()
       if( (hostAddr != QHostAddress::LocalHost) && validIpV4)
       {
           ipAddress = hostAddr.toString();
-          qDebug()<<ipAddress;
+          this->listen(hostAddr);
+          qDebug()<<"Will listen on the address" <<ipAddress << "and port"<<this->serverPort() ;
       }
     }
 }
