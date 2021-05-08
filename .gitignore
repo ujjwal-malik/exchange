@@ -33,8 +33,12 @@
 
 #Cmake files
 qtserver/CMakeLists.txt.user
+qtclient/CMakeLists.txt.user
 
 #local build directory
 build-qtserver-Desktop_Qt_6_0_3_GCC_64bit-Debug/
 ../build-qtserver-Desktop_Qt_6_0_0_MSVC2019_64bit-Debug
 build-qtserver-Desktop_Qt_6_0_0_MSVC2019_64bit-Debug
+
+build-qtserver-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug
+
